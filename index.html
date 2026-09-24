@@ -1,53 +1,246 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Jake Konkowski</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jacob Konkowski — Software Engineer. AWS, TypeScript, Java, and full-stack product work.">
+  <title>Jacob Konkowski</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-	<div id="header"></div>
+  <div class="atmosphere" aria-hidden="true"></div>
 
-	<div id="introduction" class="container">
-		<div class="row">
-			<div class="col col-12">
-				<img src="./img/IMG_1206.jpg" alt="picture of me" style="max-width: 250px; height: auto;">
-			</div>
+  <header class="site-header">
+    <a class="brand" href="#top">Jacob Konkowski</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
 
-			<div class="col col-12">
-				<br>
-				<h1><b>Hi, I'm Jake Konkowski.</b></h1>
-				<p>From a young age, I have been interested in how things work and technology. I taught myself how to
-					program at 12, programmed my first successful project at 14, and earned my first internship at 17.
-					Since then, I have been studying computer science at <a href="https://wmich.edu/">Western Michigan
-						University</a> where I plan to graduate in May, 2023. Afterwards, I hope to continue my journey
-					towards mastering software development.</p>
-				<p>In my free time, I enjoy playing video games, listening to hi-fi audio, and actively seeking things
-					outside of my comfort zone (Inspired by <a href="https://yestheory.com/">Yes Theory</a>). I love
-					pushing myself to my limits and discovering my abilities. For example when I was working on <a
-						href="./projects.html#theflashswep">my Garry's Mod addons</a>, I taught myself how to use <a
-						href="https://www.adobe.com/products/photoshop.html">Adobe Photoshop</a> and <a
-						href="https://www.adobe.com/products/illustrator.html">Illustrator</a>, so I could make my own
-					promotional art.</p>
-			</div>
-		</div>
-	</div>
+  <main id="top">
+    <section class="hero">
+      <p class="hero-brand">Jacob Konkowski</p>
+      <h1 class="hero-title">Software engineer building cloud-native product systems.</h1>
+      <p class="hero-lede">
+        Based in Lisle, IL. I ship authentication, infrastructure, and full-stack features
+        with TypeScript, Java, and AWS.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:jrkonkowski@protonmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/jacob-konkowski" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/JacobKonkowski" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
 
-	<footer>
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <section id="experience" class="section">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Roles where I’ve owned services, pipelines, and product features end to end.</p>
+      </div>
 
-		<script type="text/javascript">
-			$(document).ready(function () {
-				$("#header").load("header.html");
-			});
-		</script>
-	</footer>
+      <article class="job reveal">
+        <div class="job-meta">
+          <h3><a href="https://www.3won.com/" target="_blank" rel="noopener">3WON, LLC</a></h3>
+          <p class="place">Naperville, IL</p>
+        </div>
+
+        <div class="role">
+          <div class="role-line">
+            <h4>Software Developer II</h4>
+            <time>Dec 2024 – Present</time>
+          </div>
+          <ul>
+            <li>Built a multi-environment authentication service with MFA using AWS CDK and TypeScript.</li>
+            <li>Integrated that service into a Spring Boot app so product login flows could enforce MFA.</li>
+            <li>Implemented active user migration to AWS Cognito during authentication (users moved onto Cognito as they signed in).</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-line">
+            <h4>Software Developer I</h4>
+            <time>May 2023 – Dec 2024</time>
+          </div>
+        </div>
+
+        <div class="role">
+          <div class="role-line">
+            <h4>Software Development Intern</h4>
+            <time>May 2018 – Dec 2020</time>
+          </div>
+          <ul>
+            <li>Across roles: owned Java services and Angular UI for product features (dashboards, PDF generation, data mapping).</li>
+            <li>Automated verification of state medical license data previously done by hand, including web-scraping bots.</li>
+            <li>Redesigned bulk practitioner data uploads with dynamically generated Excel dropdowns.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-meta">
+          <h3><a href="https://www.aboutamazon.com/" target="_blank" rel="noopener">Amazon</a></h3>
+          <p class="place">Seattle, WA</p>
+        </div>
+        <div class="role">
+          <div class="role-line">
+            <h4>Software Development Engineer Intern</h4>
+            <time>May 2022 – Aug 2022</time>
+          </div>
+          <ul>
+            <li>Built a data-processing pipeline with AWS CDK (TypeScript), using S3, DynamoDB, Batch, and ECR.</li>
+            <li>Deployed Docker images and wired Python data processing with Boto3 and Pandas.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-meta">
+          <h3><a href="https://www.tylertech.com/" target="_blank" rel="noopener">Tyler Technologies</a></h3>
+          <p class="place">Troy, MI (Remote)</p>
+        </div>
+        <div class="role">
+          <div class="role-line">
+            <h4>Software Development Intern</h4>
+            <time>May 2021 – Apr 2022</time>
+          </div>
+          <ul>
+            <li>Built .NET/C# tools to generate map data files for migration to a new data format.</li>
+            <li>Sped up file generation by batching inserts in database transactions.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>From senior design to Garry’s Mod addons with hundreds of thousands of players.</p>
+      </div>
+
+      <article class="project reveal" id="whoopeek">
+        <div class="project-top">
+          <h3><a href="https://www.whoopeek.com/" target="_blank" rel="noopener">WhooPeek</a></h3>
+          <time>Sept 2022 – Apr 2023</time>
+        </div>
+        <p class="project-tag">WMU Senior Design · React Native · AWS · Pulumi</p>
+        <ul>
+          <li>Social media mobile app in React Native (Expo) and AWS with Cognito sign-up and profiles.</li>
+          <li>Deployed Cognito, SNS, and S3 with Pulumi IaC in a microservices setup.</li>
+          <li>GitLab CI/CD for automatic testing and deployments; Scrum via Jira.</li>
+        </ul>
+      </article>
+
+      <article class="project reveal" id="theflashswep">
+        <div class="project-top">
+          <h3><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=554915029" target="_blank" rel="noopener">The Flash SWEP</a></h3>
+        </div>
+        <p class="project-tag">Garry’s Mod addon · Lua</p>
+        <p>Addon inspired by <em>The Flash</em> TV show. Overnight success—2,000 subscribers the morning after launch.</p>
+        <ul class="stats">
+          <li>280,000+ subscribers</li>
+          <li>34,000+ collections</li>
+          <li>5★ (8,400+ ratings)</li>
+          <li>8,000+ favorites</li>
+        </ul>
+      </article>
+
+      <article class="project reveal" id="theantmanswep">
+        <div class="project-top">
+          <h3><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1404809615" target="_blank" rel="noopener">The Ant-Man SWEP</a></h3>
+        </div>
+        <p class="project-tag">Garry’s Mod addon · Lua</p>
+        <p>Addon inspired by the Ant-Man film—smaller audience than Flash, still a project I’m proud of.</p>
+        <ul class="stats">
+          <li>20,000+ subscribers</li>
+          <li>3,000+ collections</li>
+          <li>5★ (300+ ratings)</li>
+          <li>600+ favorites</li>
+        </ul>
+      </article>
+
+      <article class="project reveal" id="gpowers">
+        <div class="project-top">
+          <h3><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=942860152" target="_blank" rel="noopener">gPowers</a></h3>
+        </div>
+        <p class="project-tag">Garry’s Mod addon · Lua</p>
+        <p>A suite of in-game superpowers for Garry’s Mod.</p>
+        <ul class="stats">
+          <li>29,000+ subscribers</li>
+          <li>5,000+ collections</li>
+          <li>4★ (400+ ratings)</li>
+          <li>800+ favorites</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>Tools I use day to day on product and infrastructure work.</p>
+      </div>
+      <dl class="skills reveal">
+        <div>
+          <dt>Languages</dt>
+          <dd>Java, JavaScript, TypeScript, SQL, C#, Python</dd>
+        </div>
+        <div>
+          <dt>Backend</dt>
+          <dd>REST APIs, Spring Boot</dd>
+        </div>
+        <div>
+          <dt>Cloud / DevOps</dt>
+          <dd>AWS CDK, Pulumi, AWS (Cognito, S3, DynamoDB, SES, Batch, ECR)</dd>
+        </div>
+        <div>
+          <dt>Frontend</dt>
+          <dd>Angular, React Native, Bootstrap</dd>
+        </div>
+        <div>
+          <dt>Tools</dt>
+          <dd>Git</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="education" class="section">
+      <div class="section-head">
+        <h2>Education</h2>
+        <p>Computer science with a mathematics minor.</p>
+      </div>
+      <article class="edu reveal">
+        <div class="job-meta">
+          <h3><a href="https://wmich.edu/" target="_blank" rel="noopener">Western Michigan University</a></h3>
+          <p class="place">Kalamazoo, MI</p>
+        </div>
+        <div class="role-line">
+          <h4>BS in Computer Science; Minor in Mathematics</h4>
+          <time>Aug 2019 – Apr 2023</time>
+        </div>
+        <ul>
+          <li>GPA 3.74 · Lee Honors College · Alpha Lambda Delta</li>
+          <li>Dean’s List: Fall 2019, Fall 2020, Spring 2021, Fall 2021, Spring 2022, Fall 2022</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Jacob Konkowski</p>
+    <p>
+      <a href="mailto:jrkonkowski@protonmail.com">jrkonkowski@protonmail.com</a>
+      ·
+      <a href="https://www.linkedin.com/in/jacob-konkowski" target="_blank" rel="noopener">LinkedIn</a>
+      ·
+      <a href="https://github.com/JacobKonkowski" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>
